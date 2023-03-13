@@ -39,17 +39,26 @@ This will create a virtual machine and provision it with the necessary software 
 vagrant ssh lamp
 ```
 
-5. The machine is now ready to be configured to be used as a LAMP server.
+5. The machine is now ready to be configured to be used as a LAMP server. You can run the following commands to ensure the services neededs have been properly installed and are running.
+
+```
+sudo systemctl status mysql
+sudo systemctl status apache2
+php -v
+
+```
 
 6. Now passing to the docker machine, lets create and provision it.
 
 ```
 vagrant up docker
 ```
-7. Connect to the docker virtual machine
+7. Connect to the docker virtual machine and confirm docker engine is running.
 
 ```
 vagrant ssh docker
+
+sudo systemctl status docker
 ```
 
 With this simple steps you will have two provisioned virtual machines ready to be used, one with docker and one as a LAMP server
