@@ -19,10 +19,10 @@ To get started with the project, follow these steps:
 git clone https://github.com/yohandiaz/python-flask-vagrant-docker-lamp.git
 ```
 
-2. Change into the project directory:
+2. Change into the project vagrant directory:
 
 ```
-cd python-flask-vagrant-docker-lamp
+cd python-flask-vagrant-docker-lamp/vagrant
 ```
 
 3. Launch the Vagrant environment:
